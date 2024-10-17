@@ -2,6 +2,29 @@
 
 Ini adalah panduan singkat untuk memahami arsitektur dasar dari sebuah **web server** yang bertugas untuk menjalankan website dan melayani permintaan klien melalui protokol HTTP/HTTPS.
 
+## Diagram Arsitektur Server Web
+
+Berikut adalah diagram sederhana untuk menggambarkan alur arsitektur server web:
+
+```text
+[ Client (Browser) ]
+        |
+        v
+   [ DNS Server ] ---------------------
+        |                              |
+        v                              v
+  [ Firewall ]                   [ Web Server ]
+        |                              |
+        v                              v
+   [ Load Balancer ]               [ Application Server (Optional) ]
+        |                              |
+        v                              v
+   [ Caching Layer ]               [ Database Server ]
+        |                              |
+        v                              v
+   [ Web Content ]                  [ Data Response ]
+```
+
 ## Komponen Utama dalam Arsitektur Web Server
 
 1. **Client (Browser)**:
@@ -81,29 +104,6 @@ Ini adalah panduan singkat untuk memahami arsitektur dasar dari sebuah **web ser
 
 8. **Browser Display**:
    - Browser menampilkan halaman web yang diminta ke pengguna.
-
-## Diagram Arsitektur Server Web
-
-Berikut adalah diagram sederhana untuk menggambarkan alur arsitektur server web:
-
-```text
-[ Client (Browser) ]
-        |
-        v
-   [ DNS Server ] ---------------------
-        |                              |
-        v                              v
-  [ Firewall ]                   [ Web Server ]
-        |                              |
-        v                              v
-   [ Load Balancer ]               [ Application Server (Optional) ]
-        |                              |
-        v                              v
-   [ Caching Layer ]               [ Database Server ]
-        |                              |
-        v                              v
-   [ Web Content ]                  [ Data Response ]
-```
 
 ## Teknologi yang Digunakan
 
